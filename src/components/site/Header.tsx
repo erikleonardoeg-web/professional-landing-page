@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
-import { NAV, WA_MESSAGES, waLink } from "@/config/gym";
+import { Instagram, Menu, X } from "lucide-react";
+import { GYM, NAV, WA_MESSAGES, waLink } from "@/config/gym";
 import { Logo } from "./Logo";
 
 export function Header() {
@@ -19,10 +19,15 @@ export function Header() {
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Principal">
           {NAV.map((n) => <a key={n.href} href={n.href} className="nav-link">{n.label}</a>)}
         </nav>
+        <div className="flex items-center gap-1 lg:gap-4">
+        <a href={GYM.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram da TDS GYM" className="p-2 text-foreground transition-colors hover:text-primary">
+          <Instagram className="h-6 w-6" />
+        </a>
         <a href={waLink(WA_MESSAGES.contato)} target="_blank" rel="noopener noreferrer" className="btn-primary hidden !px-5 !py-2.5 lg:inline-flex">Quero treinar</a>
         <button className="p-2 text-foreground lg:hidden" aria-label={open ? "Fechar menu" : "Abrir menu"} aria-expanded={open} onClick={() => setOpen(!open)}>
           {open ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
         </button>
+        </div>
       </div>
       {open && (
         <div className="absolute inset-x-0 top-full h-[calc(100dvh-4rem)] overflow-y-auto bg-background lg:hidden">
