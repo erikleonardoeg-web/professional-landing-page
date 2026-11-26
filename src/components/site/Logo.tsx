@@ -1,10 +1,15 @@
-// Identidade tipográfica PROVISÓRIA. Troque por <img src="/logo.svg"> quando a logo oficial chegar.
-export function Logo({ className = "" }: { className?: string }) {
+import logoAsset from "@/assets/tds-gym-logo.png.asset.json";
+
+// Logo oficial da TDS GYM (PNG com fundo transparente).
+export function Logo({ className = "h-12 w-auto md:h-16" }: { className?: string }) {
   return (
-    <span className={`inline-flex items-baseline gap-1.5 font-display uppercase leading-none tracking-wide ${className}`} aria-label="TDS GYM">
-      <span className="text-foreground">TDS</span>
-      <span className="h-[0.7em] w-[3px] -skew-x-12 self-center bg-primary" aria-hidden />
-      <span className="text-primary">GYM</span>
-    </span>
+    <img
+      src={logoAsset.url}
+      alt="TDS GYM"
+      width={1393}
+      height={965}
+      decoding="async"
+      className={`object-contain ${className}`}
+    />
   );
 }

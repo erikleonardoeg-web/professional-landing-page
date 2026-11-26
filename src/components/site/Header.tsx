@@ -15,7 +15,7 @@ export function Header() {
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${scrolled || open ? "border-b border-border bg-background/95 backdrop-blur" : "bg-transparent"}`}>
       <div className="container-site flex h-16 items-center justify-between md:h-20">
-        <a href="#inicio" className="text-2xl md:text-3xl" onClick={() => setOpen(false)}><Logo /></a>
+        <a href="#inicio" className="inline-flex items-center" onClick={() => setOpen(false)}><Logo className="h-11 w-auto md:h-14" /></a>
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Principal">
           {NAV.map((n) => <a key={n.href} href={n.href} className="nav-link">{n.label}</a>)}
         </nav>

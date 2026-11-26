@@ -193,7 +193,7 @@ function Index() {
       <footer className="border-t border-border pb-28 pt-16 md:pb-12">
         <div className="container-site grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
-            <Logo className="text-4xl" />
+            <Logo className="h-20 w-auto" />
             <p className="mt-4 max-w-sm text-muted-foreground">{GYM.address}</p>
           </div>
           <nav aria-label="Rodapé">
