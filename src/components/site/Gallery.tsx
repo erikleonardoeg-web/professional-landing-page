@@ -22,7 +22,7 @@ export function Gallery() {
       <div className="grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-3">
         {GALLERY.map((g, idx) => (
           <button key={idx} onClick={() => setI(idx)} aria-label={`Ampliar: ${g.alt}`}
-            className={`group relative overflow-hidden bg-card ${idx === 0 ? "col-span-2 row-span-2 aspect-square md:aspect-auto" : "aspect-square"}`}>
+            className={`group relative overflow-hidden bg-card ${idx === 0 ? "col-span-2 row-span-2 aspect-square md:aspect-auto" : idx === n - 1 ? "aspect-square md:col-span-2" : "aspect-square"}`}>
             <img src={g.src} alt={g.alt} loading="lazy" className="h-full w-full object-cover grayscale-[30%] transition duration-500 group-hover:scale-105 group-hover:grayscale-0" />
             <span className="absolute inset-0 bg-background/20 transition group-hover:bg-transparent" />
           </button>

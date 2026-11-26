@@ -47,7 +47,6 @@ export const GALLERY: { src: string; alt: string; provisional: boolean }[] = [
   { src: u("photo-1581009146145-b5ef050c2e1e"), alt: "Imagem ilustrativa: treino de força", provisional: true },
   { src: u("photo-1593079831268-3381b0db4a77"), alt: "Imagem ilustrativa: halteres", provisional: true },
   { src: u("photo-1534438327276-14e5300c3a48"), alt: "Imagem ilustrativa: salão de musculação", provisional: true },
-  { src: u("photo-1571902943202-507ec2618e8f"), alt: "Imagem ilustrativa: treino em academia", provisional: true },
 ];
 
 // Preencha com a lista oficial. Vazio = exibe convite para consultar pelo WhatsApp.
