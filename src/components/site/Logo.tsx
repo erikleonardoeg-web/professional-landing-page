@@ -1,4 +1,4 @@
-import logoAsset from "@/assets/tds-gym-logo.png.asset.json";
+const logoAsset = { url: "/tds-gym-logo.png" };
 
 // Logo oficial da TDS GYM (PNG com fundo transparente).
 export function Logo({ className = "h-12 w-auto md:h-16" }: { className?: string }) {
