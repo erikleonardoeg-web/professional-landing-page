@@ -134,7 +134,7 @@
 @utility link-arrow { display: inline-flex; align-items: center; gap: .5rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; font-size: .85rem; color: var(--foreground); border-bottom: 2px solid var(--primary); padding-bottom: .25rem; &:hover { color: var(--primary); } }
 @utility card-site { background: var(--background); border: 1px solid var(--border); border-radius: var(--radius); transition: border-color .3s, transform .3s;
   &:hover { border-color: color-mix(in oklab, var(--primary) 60%, var(--border)); transform: translateY(-4px); } }
-@utility hero-overlay { background: linear-gradient(to top, var(--background) 5%, color-mix(in oklab, var(--background) 70%, transparent) 50%, color-mix(in oklab, var(--background) 45%, transparent)); }
+@utility hero-overlay { background: linear-gradient(to top, var(--background) 25%, color-mix(in oklab, var(--background) 88%, transparent) 55%, color-mix(in oklab, var(--background) 70%, transparent) 80%, color-mix(in oklab, var(--background) 55%, transparent)), linear-gradient(to right, color-mix(in oklab, var(--background) 75%, transparent), transparent 75%); }
 @utility accent-frame { position: relative; &::before { content: ""; position: absolute; inset: 1rem -1rem -1rem 1rem; border: 2px solid var(--primary); z-index: -1; } }
 @utility plan-feature { background: var(--background); border: 1px solid var(--border); border-left: 4px solid var(--primary); }
 @utility cta-final { background: var(--primary); color: var(--primary-foreground); }
